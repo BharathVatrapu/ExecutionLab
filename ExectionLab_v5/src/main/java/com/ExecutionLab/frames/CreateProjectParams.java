@@ -297,7 +297,7 @@ public class CreateProjectParams extends javax.swing.JPanel {
                     SQLLite.insertProjectParamsTable(GlobalConstants.Project_Name, listParameters.getModel().getElementAt(i).toString());
                 }
             } else{
-              SQLLite.createProjectstable(GlobalConstants.PROJECTPARAMS_SQL_TABLE);
+              SQLLite.createTable(GlobalConstants.PROJECTPARAMS_SQL_TABLE);
               for (int i = 0; i < listParameters.getModel().getSize(); i++) {
                    SQLLite.insertProjectParamsTable(GlobalConstants.Project_Name, listParameters.getModel().getElementAt(i).toString());
               }

@@ -64,11 +64,11 @@ public class Starter extends JFrame  {
         Thread t=Thread.currentThread();
         t.sleep(10000);
         ss.dispose();
-        Generic.initSetup();
+
         if(Generic.verifyFileExist(GlobalConstants.ROOT_FOLDER_PATH+"/Bharath.txt")){
             new Main().setVisible(true);
         } else {
-            JOptionPane.showMessageDialog(null,"Configuration problem...click on Reset button");
+            Generic.initSetup();
         }
     }
 

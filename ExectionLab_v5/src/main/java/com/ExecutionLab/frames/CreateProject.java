@@ -384,7 +384,7 @@ public class CreateProject extends javax.swing.JPanel {
 
                 }
             } else {
-                SQLLite.createProjectstable(GlobalConstants.PROJECTS_SQL_TABLE);
+                SQLLite.createTable(GlobalConstants.PROJECTS_SQL_TABLE);
                 SQLLite.insertProjectsTable(edtAccountName.getText(), edtProjectName.getText(), rbSEMaven.getText(), edtProjectPath.getText());
             }
 
