@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class SQLLite {
 
     protected static Connection conn = null;
-    protected static String dbName = "jdbc:sqlite:test1.db";
+    protected static String dbName = "jdbc:sqlite:test2.db";
     /**
      * Connect to a database
      */
@@ -37,7 +37,7 @@ public class SQLLite {
 
 
 
-    public static void createProjectstable(String sqlquery){
+    public static void createTable(String sqlquery){
         Connection c = null;
         Statement stmt = null;
 

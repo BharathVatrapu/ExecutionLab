@@ -75,15 +75,9 @@ public class Generic {
         createNewFile(GlobalConstants.ROOT_FOLDER_PATH+"/Bharath.txt");
     }
     public static void createTables(){
-        if(!SQLLite.tableExists(GlobalConstants.tblPROJECTS)) {
-            SQLLite.createProjectstable(GlobalConstants.PROJECTS_SQL_TABLE);
-        }
-        if(!SQLLite.tableExists(GlobalConstants.tblPROJECTPARAMS)){
-            SQLLite.createProjectstable(GlobalConstants.PROJECTPARAMS_SQL_TABLE);
-        }
-        if(!SQLLite.tableExists(GlobalConstants.tblPROJECTPARAMVALUES)){
-            SQLLite.createProjectstable(GlobalConstants.PROJECTPARAMVALUES_SQL_TABLE);
-        }
+        SQLLite.createTable(GlobalConstants.PROJECTS_SQL_TABLE);
+        SQLLite.createTable(GlobalConstants.PROJECTPARAMS_SQL_TABLE);
+        SQLLite.createTable(GlobalConstants.PROJECTPARAMVALUES_SQL_TABLE);
     }
 
     public static void createNewFolder(String folderPath, String folderName) {
